@@ -1,0 +1,18 @@
+h1{
+   background-color: rgb(226, 165, 142);
+}
+table{
+    background-color: rgb(209, 193, 100);
+}
+th{
+    background-color: rgb(211, 157, 85);
+}
+td{
+    box-shadow: inset;color: rgb(7, 52, 59);
+}
+h2{
+    text-decoration: underline;color: rgb(49, 65, 13);
+}
+tr{
+    box-shadow: inset;color-scheme: ;
+}
