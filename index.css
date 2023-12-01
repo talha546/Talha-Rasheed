@@ -1,74 +1,92 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: rebeccapurple;
-    display: grid;
-    place-items: center;
-    height: 100vh;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 350px;
-    width: 300px;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 30px;
-}
-
-p{
+    font-family:'Poppins', sans-serif ;
+    box-sizing:border-box ;
+} 
+.form_box{
+    width:90% ;
+    max-width: 450px;
+    top:50% ;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    padding:50px 60px 70px ;
     text-align: center;
+    background-color: rgb(205, 231, 255);
+    position: absolute;
 }
 
-form{
+.form_box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    position: relative;
+    color: #3c00a0;
+}
+
+.form_box h1::after{
+content:'' ;
+width:30px ;
+height:4px ;
+border: radius 3px; ;
+background:#3c00a0 ;
+position:absolute ;
+left:50% ;
+transform:translateX(-50%) ;
+bottom: -12px;
+}
+.input_filed{
+    margin:15px 0 ;
+    background: #eaeaea ;
+    border-radius: 3px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    max-height: 65px;
+    transition: max-height 0.5s;
 }
-
-label{
-    font-size: 20px;
-    font-weight: bold;
-}
-
 input{
-    padding: 5px;
-    border: none;
-    border-bottom: 1px solid rgb(137, 137, 137);
-    margin-top: 10px;
-    outline: none;
+    width: 100%;
+    background: transparent;
+    border:0;
+    outline:0;
+    padding: 18px 15px;
+}
+.input_filed i{
+    margin-left: 15px ;
+    color: #999;
 }
 
-.login-btn{
-    border: none;
-    background-color: green;
-    color: #fff;
-    font-size: 20px;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 30px;
+form p a{
+    text-decoration: none;
+    color: #3c00a0;
 }
 
-.logout-btn{
-    border: none;
-    background-color: rgb(255, 71, 71);
-    color: #fff;
-    height: 50px;
+.btn_filed{
     width: 100px;
-    font-size: 20px;
-    border-radius: 5px;
-    margin-top: 30px;
-    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
 }
+
+.btn-filed button{
+    flex-basis: 48%;
+    background:#3c00a0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border:0;
+    outline:0;
+    cursor: pointer; 
+    transition: back-ground 1s;
+    width: 100px;
+}
+.input_group{
+    height: 280px;
+}
+
+.btn-filed button.disable{
+    color: #555;
+    background: #eaeaea;
+}
+
+
+

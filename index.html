@@ -1,24 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Login</h1>
-      <form>
-        <label for="username">Username</label>
-        <input type="text" name="username" />
-        <label for="password">Password</label>
-        <input type="password" name="password" />
-        <input type="submit" class="login-btn" value="Login" />
-      </form>
-    </div>
-    
-    <script type="module" src="./login.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrantion form</title>
+    <link rel="stylesheet " href="index.css">
+    <script src="https://kit.fontawesome.com/34fc50a035.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="form_box">
+    <h1 id="title">Sign Up</h1>
+    <form>
+        <div class="input_group">
+            <div class="input_filed" id="nameFiled">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Name">
+            </div>
+            
+            <div class="input_filed">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="Email" placeholder="Email" id="signin-email">
+            </div>
+            
+            <div class="input_filed">
+                <i class="fa-solid fa-lock"></i>
+                <input type="Password" placeholder="Password" id="signin-password">
+            </div>
+            <p>Lost password <a href="#">Click here!</a></p>
+        </div>
+
+        <div class="btn-filed">
+            <button type="button" id="signupBtn">Sign up</button>
+            <!-- <button type="button"id="signinBtn" class="disable">Sign in</button> -->
+
+        </div>
+    </form>
+    <form>
+        <div class="input_group">
+            <div class="input_filed" id="nameFiled">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Name">
+            </div>
+            
+            <div class="input_filed">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="Email" placeholder="Email" id="login-email">
+            </div>
+            
+            <div class="input_filed">
+                <i class="fa-solid fa-lock"></i>
+                <input type="Password" placeholder="Password" id="login-password">
+            </div>
+            <p>Lost password <a href="#">Click here!</a></p>
+        </div>
+
+        <div class="btn-filed">
+            <!-- <button type="button" id="signupBtn">Sign up</button> -->
+            <!-- <button type="button"id="signinBtn" class="disable">Sign in</button> -->
+
+            <button type="button"id="loginBtn" class="disable">Login</button>
+        </div>
+    </form>
+</div>
+<!-- <script type="module" src="java.js"></script> -->
+
+
+
+    <script type="module" src="java.js"></script>
+</body>
 </html>
